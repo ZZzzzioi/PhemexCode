@@ -58,7 +58,7 @@ for j in range(len(date_headline)):
 duplicated_list_dup = list(set(duplicated_list))
 date_headline = date_headline.drop(labels=duplicated_list_dup)
 
-token = pygsheets.authorize(service_file='D:\\Code\\Media_data\\token.json')
+token = pygsheets.authorize(service_file='************')
 DashBoard = token.open('PR Article Brand Mention Count')
 News = DashBoard[4]
 News.clear()
