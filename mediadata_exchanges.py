@@ -224,9 +224,9 @@ def main():
     time.sleep(10)
     driver.find_element_by_xpath('/html/body/div[6]/div/li[2]/a').click()
     time.sleep(3)
-    driver.find_element_by_xpath('/html/body/div[10]/div[2]/form/div[1]/input[1]').send_keys('Zisheng.ji@Phemex.com')
+    driver.find_element_by_xpath('/html/body/div[10]/div[2]/form/div[1]/input[1]').send_keys('**********')
     time.sleep(1)
-    driver.find_element_by_xpath('/html/body/div[10]/div[2]/form/div[2]/input').send_keys('Iieng@9737')
+    driver.find_element_by_xpath('/html/body/div[10]/div[2]/form/div[2]/input').send_keys('********')
     time.sleep(1)
     driver.find_element_by_xpath('/html/body/div[10]/div[2]/form/div[3]/input').click()
     time.sleep(3)
@@ -294,7 +294,7 @@ def main():
     Deribit.insert(5, deribit_itg_followers[1])
     Kucoin.insert(5, kucoin_itg_followers[1])
 
-    token = pygsheets.authorize(service_file='D:\\Code\\Media_data\\token.json') #C:\CodeStorage\PY_Code\spider
+    token = pygsheets.authorize(service_file='**************')
     gsheet(token, 0, Phemex, row_index_PH)
     gsheet(token, 1, Binance, row_index_BI)
     gsheet(token, 2, OKEx, row_index_OK)
